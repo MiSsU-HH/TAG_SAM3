@@ -1,0 +1,58 @@
+{
+  "dataset": "isaid",
+  "baseline": "sam3",
+  "class_names": [
+    "background",
+    "ship",
+    "store tank",
+    "baseball diamond",
+    "tennis court",
+    "basketball court",
+    "ground track field",
+    "bridge",
+    "large vehicle",
+    "small vehicle",
+    "helicopter",
+    "swimming pool",
+    "roundabout",
+    "soccer ball field",
+    "plane",
+    "harbor"
+  ],
+  "thing_indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "prompt_batch_size": 8,
+  "semantic": {
+    "confidence": 0.3,
+    "use_semantic": true,
+    "rejection": 0.5,
+    "background": 0
+  },
+  "instance": {
+    "confidence": 0.05,
+    "mask_threshold": 0.5,
+    "nms": 0.5,
+    "max_dets": 300
+  },
+  "panoptic": {
+    "confidence": 0.3,
+    "mask_threshold": 0.5,
+    "nms": 0.5,
+    "overlap": 0.5
+  }
+}

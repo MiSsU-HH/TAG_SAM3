@@ -1,0 +1,54 @@
+{
+  "dataset": "cityscapes",
+  "baseline": "sam3",
+  "class_names": [
+    "road",
+    "sidewalk",
+    "building",
+    "wall",
+    "fence",
+    "pole",
+    "trafficlight",
+    "trafficsign",
+    "vegetation",
+    "terrain",
+    "sky",
+    "person",
+    "rider",
+    "car",
+    "truck",
+    "bus",
+    "train",
+    "motorcycle",
+    "bicycle"
+  ],
+  "thing_indices": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "prompt_batch_size": 8,
+  "semantic": {
+    "confidence": 0.3,
+    "use_semantic": true,
+    "rejection": 0.0,
+    "background": 0
+  },
+  "instance": {
+    "confidence": 0.05,
+    "mask_threshold": 0.5,
+    "nms": 0.5,
+    "max_dets": 100
+  },
+  "panoptic": {
+    "confidence": 0.3,
+    "mask_threshold": 0.5,
+    "nms": 0.5,
+    "overlap": 0.5
+  }
+}

@@ -58,7 +58,6 @@ conda create -n tag-baseline python=3.12 -y
 conda activate tag-baseline
 pip install torch==2.7.1 torchvision==0.22.1 --index-url https://download.pytorch.org/whl/cu126
 git clone https://github.com/facebookresearch/sam3.git ../sam3
-git -C ../sam3 checkout 0570b3a5be9c4e694f23d85232fb55f4a6f1f7fc
 pip install -e ../sam3
 pip install -r requirements.txt
 ```
